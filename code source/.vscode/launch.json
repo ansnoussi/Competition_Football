@@ -1,0 +1,17 @@
+{
+    "configurations": [
+
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MaMain",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "MaMain",
+            "args": "",
+            "projectName": "MiniProjetPOO",
+            "code-runner.runInTerminal": true
+        }
+    ]
+}

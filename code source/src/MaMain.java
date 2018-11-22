@@ -3,10 +3,11 @@ import Personne.*;
 public class MaMain {
 
 	public static void main(String[] args) {
-Personne B = new Arbitre();
-B.Afficher();
-Personne C= new Joueur();
-C.Afficher();
+		System.out.println("******");
+		Personne B = new Arbitre();
+		System.out.println("******");
+		B.Afficher();
+		Personne C= new Joueur();
+		C.Afficher();
 	}
 }
-
