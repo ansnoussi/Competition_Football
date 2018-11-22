@@ -11,7 +11,7 @@ public Entraineur(){
 		System.out.println("Nom Entraineur : " + nom);
 		System.out.println("Prenom Entraineur : " + prenom);	
 		System.out.println("Age Entraineur : " + age);	
-		System.out.println("Equipe entrainé :"+ equipe);
+		System.out.println("Equipe entraine :"+ equipe);
 	}
 	
 	public void setNom() {
@@ -30,7 +30,7 @@ public Entraineur(){
 	}
 	
 	public void setEquipe() {
-		System.out.print("Saisir le nom de l'equipe entrainé  "); 
+		System.out.print("Saisir le nom de l'equipe entraine  "); 
 		equipe= Sc.nextLine();
 	}
 	
