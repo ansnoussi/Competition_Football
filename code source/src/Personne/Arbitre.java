@@ -3,48 +3,26 @@ package Personne;
 public class Arbitre extends Personne{
 private int nbMatches;
 
-public Arbitre(){
-	setAll();
+public Arbitre(String nom,int age,int NbMathches){
+     super(nom,age);
+     this.nbMatches= NbMathches;
 }
 
 	public void Afficher() {
-		System.out.println("Nom Arbitre : " + nom);
-		System.out.println("Prenom Arbitre : " + prenom);	
+		System.out.println("Nom Arbitre : " + nom);	
 		System.out.println("Age Arbitre : " + age);	
 		System.out.println("Nombre de Matches :"+ nbMatches);
 		}
 	
-	public void setNom() {
-		System.out.print("Saisir le nom de l'arbitre  ");
-		nom = Sc.nextLine();
-	}
-
-	public void setPrenom() {
-		System.out.print("Saisir le prenom de l'arbitre  ");
-		prenom = Sc.nextLine();	
-		}
-
-	public void setAge() {
-		System.out.print("Saisir l'age de l'arbitre  ");
-		age = Sc.nextInt();
-	}
-	
-    public void setNbMatches() {
-		System.out.println("Saisir le nombre de matches  ");
-		nbMatches= Sc.nextInt();
-		}
+    // Le nombre de matches s'incrémente automatiquement si un arbitre vient de se charge de la déroulement d'un match
+   void IncrementNbMatches() {
+	   nbMatches++;
+   }
+   
+    // on en besoin à l'affichage d'un match
+    public String getNom() {
+    	return nom;
+    }
     
-	public int getNbMatches() {
-		return nbMatches;
-	}
-	
-	public void setAll() {
-		setNom();
-		setPrenom();
-		setAge();
-        setNbMatches();
-	}
-	
-	
-	
-	}
+    }
+

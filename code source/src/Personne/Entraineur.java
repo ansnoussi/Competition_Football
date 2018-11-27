@@ -3,47 +3,23 @@ package Personne;
 public class Entraineur extends Personne {
 private String equipe;
 
-public Entraineur(){
-	setAll();
+public Entraineur(String nom,int age){
+    super(nom,age);
+    setEquipe();
 }
 
 	public void Afficher() {
 		System.out.println("Nom Entraineur : " + nom);
-		System.out.println("Prenom Entraineur : " + prenom);	
 		System.out.println("Age Entraineur : " + age);	
-		System.out.println("Equipe entraine :"+ equipe);
+		System.out.println("Equipe entrainé :"+ equipe);
 	}
 	
-	public void setNom() {
-		System.out.print("Saisir le nom de l'entraineur  ");
-		nom = Sc.nextLine();
-	}
-
-	public void setPrenom() {
-		System.out.print("Saisir le prenom de l'entraineur  ");
-		prenom = Sc.nextLine();	
-		}
-
-	public void setAge() {
-		System.out.print("Saisir l'age de l'entraineur  ");
-		age = Sc.nextInt();
-	}
-	
+	// Un entraineur peut changer l'equipe qu'il l'entraine
 	public void setEquipe() {
-		System.out.print("Saisir le nom de l'equipe entraine  "); 
+		System.out.println("Saisir le nom de l'equipe entrainé par Mr. "+ nom);
 		equipe= Sc.nextLine();
 	}
 	
-	public String getEquipe() {
-	return equipe;
-	}
-	
-	public void setAll(){
-		setNom();
-		setPrenom();
-		setEquipe();
-		setAge();
-	}
 	
 	
 }
